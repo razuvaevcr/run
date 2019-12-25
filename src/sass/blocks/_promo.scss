@@ -13,12 +13,15 @@
         font-size: 42px;
         font-weight: 700;
         text-transform: uppercase;
+        line-height: 42px;
     }
     &__subheader {
         color: #ffffff;
         font-size: 24px;
         font-weight: 500;
         text-transform: uppercase;
+        margin-top: 17px;
+        line-height: 24px;
     }
     &__icons {
         margin-top: 65px;
@@ -27,7 +30,7 @@
         justify-content: space-between;
     }
     &__icon {
-        width: 106px;
+        width: 108px;
         text-align: center;
         color: #ffffff;
         font-size: 14px;
