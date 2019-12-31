@@ -1,0 +1,121 @@
+@media (max-width: 1200px) {
+    .promo {
+        padding: 21px 40px 93px;
+    }
+    .advantages {
+        padding: 69px 30px 81px;
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        padding: 21px 40px 60px;
+        min-height: 580px;
+        &__wrapper {
+            align-items: center;
+            margin-top: 60px;
+        }
+        &__subheader {
+            margin-top: 10px;
+        }
+        &__icons {
+            margin-top: 40px;
+        }
+    }
+    .button_main {
+        margin-top: 50px;
+    }
+    .advantages {
+        min-height: 380px;
+        padding: 40px 35px 45px;
+        &__wrapper {
+            margin-top: 35px;
+        }
+        &__item {
+            max-width: 220px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+        }
+        &__descr {
+            margin-top: 20px;
+            font-size: 12px;
+        } 
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__logo {
+            width: 30%;
+        }
+        &__official {
+            font-size: 10px;
+            width: 33%;
+            span {
+                font-size: 15px;
+            }
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+    .button {
+        width: 145px;
+        height: 27px;
+    }
+
+    .promo {
+        padding: 20px 17px 40px;
+        min-height: 550px;
+        &__header {
+            font-size: 37px;
+        }
+        &__subheader {
+            font-size: 23px;
+        }
+        &__icons {
+            margin-top: 37px;
+        }
+        &__icon {
+            width: 110px;
+            img {
+                width: 40px;
+            }
+        }
+    }
+    .button_main {
+        margin-top: 50px;
+        width: 300px;
+        height: 50px;
+    }
+    .advantages {
+        min-height: 380px;
+        padding: 40px 0 45px 0;
+        &__wrapper {
+            margin-top: 25px;
+            justify-content: space-around;
+        }
+        &__item {
+            max-width: 160px;
+        }
+        &__subtitle {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
+    .title {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 565px) {
+    .header {
+        &__logo {
+            width: 200px;
+        }
+        &__official {
+            display: none;
+        }
+    }
+}
