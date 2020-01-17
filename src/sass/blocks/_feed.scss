@@ -1,0 +1,37 @@
+.feed {
+    margin-bottom: 70px;
+    &__item {
+        margin: 50px 0 50px 0;
+        display: flex;
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+    }
+    &__text {
+        width: 650px;
+        margin-left: 62px;
+    }
+    &__subtitle {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__count {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    &__split {
+        width: 940px;
+        height: 1px;
+        background-color: #f6f6f6;
+    }
+}
