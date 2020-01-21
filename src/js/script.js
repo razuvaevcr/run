@@ -34,4 +34,57 @@ $(document).ready(function(){
   
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
+
+  //Modal
+
+  $('[data-modal=consultation]').on('click', function() {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+  $('.modal__close').on('click', function() {
+    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+  })
+
+  $('.button_mini').each(function(i) {
+    $(this).on('click', function() {
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn('slow');
+    });
+  });
+
+  
+  function validForms(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }      
+      },
+      messages: {
+        name: {
+          required: "Пожалуйста, введите свое имя",
+          minlength: jQuery.validator.format("Введите {0} символа минимум!")
+        },
+        phone: "Пожалуйста, введите свой номер телефона",
+        email: {
+          required: "Нам необходим ваш почтовый адрес, чтобы связаться с вами",
+          email: "Ваш почтовый адрес должен быть в формате name@domain.com"
+        }
+      }
+    });
+  };
+
+  validForms ('#consultation form');
+  validForms ('#consultation-form');
+  validForms ('#order form');
+
+  $('input[name=phone]').mask("+7 (999) 999-99-99"); 
+
+  
+
 });
